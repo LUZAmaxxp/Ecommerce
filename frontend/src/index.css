@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Caughe";
+  src: url("./assets/fonts/caughe.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#name {
+  font-family: "Caughe", sans-serif;
+  font-size: 2rem; /* Adjust the size as needed */
+  font-weight: bolder; /* Adjust weight if available in the font */
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+.reveal {
+  transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.animate-in {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.feature-card {
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(234, 88, 12, 0.1),
+    0 10px 10px -5px rgba(234, 88, 12, 0.04);
+}
+
+.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.animate-feature-title {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-testimonial {
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
