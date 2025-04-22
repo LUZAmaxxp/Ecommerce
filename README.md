@@ -99,6 +99,6 @@ This project is an e-commerce website with different spaces for regular users an
 
 ```bash
 
-   git clone https://github.com/KaraniAbdellah/ecom_react.git
+https://github.com/LUZAmaxxp/Ecommerce.git
 
 ```
